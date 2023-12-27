@@ -504,11 +504,7 @@ li a::after {
 }
 
 .feature {
-  .modal-container {
-    .container-fluid {
-      width: 100%;
-    }
-
+  .modal-body{
     .images {
       position: relative;
       float: left;

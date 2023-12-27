@@ -418,10 +418,7 @@ li a::after {
 .ref svg:hover {
   cursor: pointer; }
 
-.feature .modal-container .container-fluid {
-  width: 100%; }
-
-.feature .modal-container .images {
+.feature .modal-body .images {
   position: relative;
   float: left;
   display: flex;
@@ -432,12 +429,12 @@ li a::after {
   max-width: 50%;
   z-index: 0; }
 
-.feature .modal-container .images img {
+.feature .modal-body .images img {
   object-fit: cover;
   width: calc(15rem + 10vw);
   height: calc(15rem + 10vw); }
 
-.feature .modal-container .text {
+.feature .modal-body .text {
   position: relative;
   float: right;
   max-width: 50%;
@@ -449,36 +446,36 @@ li a::after {
   border: 2px #EFF6E0 solid;
   word-wrap: break-word; }
 
-.feature .modal-container .text img {
+.feature .modal-body .text img {
   object-fit: cover;
   width: calc(2rem + 1.5vw);
   height: calc(2rem + 1.5vw); }
 
-.feature .modal-container .text .row {
+.feature .modal-body .text .row {
   text-align: center;
   display: flex;
   justify-content: center;
   vertical-align: middle;
   align-items: center; }
 
-.feature .modal-container .text .col-sm-3 {
+.feature .modal-body .text .col-sm-3 {
   text-align: center;
   display: flex;
   justify-content: center; }
 
-.feature .modal-container h3 {
+.feature .modal-body h3 {
   color: #EFF6E0;
   font-size: calc(1rem + 1.2vw); }
 
-.feature .modal-container h1 {
+.feature .modal-body h1 {
   font-size: calc(1.5rem + 1.5vw);
   color: #598392; }
 
-.feature .modal-container p {
+.feature .modal-body p {
   color: #EFF6E0;
   font-size: calc(0.2rem + 1.2vw); }
 
-.feature .modal-container button {
+.feature .modal-body button {
   background-color: transparent;
   font-size: calc(0.2rem + 1.2vw);
   border-radius: 25px;
@@ -487,7 +484,7 @@ li a::after {
   border-color: #EFF6E0;
   width: 100px; }
 
-.feature .modal-container button:hover {
+.feature .modal-body button:hover {
   cursor: pointer;
   opacity: 0.5; }
 

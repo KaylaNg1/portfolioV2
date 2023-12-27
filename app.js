@@ -29,32 +29,36 @@ window.addEventListener("DOMContentLoaded", () => {
 // dynamic portfolio page
 let json = {
   "pokemongocaml": {
+    "year": 2023,
     "description": "PokemonGOCaml is a pokemon inspired game, utilizing the functional programming language OCaml and libraries such as Raylib and Raygui. Users are able to explore maps, catch different types of pokemon, and level up!",
     "languages": ["style/media/ocaml-logo.png"],
     "libraries": ["style/media"]
   },
   "bookifly": {
+    "year": 2023,
     "description": "Bookifly is a book organization & management web application. Built w/ Django framework, Bookifly utilizes databases and APIs to display and store book information. Users are able to save books into lists (Want To Read, Currently Reading, Read), rate books, explore the NYT bestselling lists, and more! This project is currently still in progress of being completed",
     "languages":[ "style/media/python.png", "style/media/html.jpg"],
     "libraries": ["style/media"]
   },
   "weather": {
+    "year": 2023,
     "description": "Web application that implements the Forecast Weather API from WeatherAPI.com. Users are able to input any city of their choosing into the search bar and are given the current temperature, forecast, humidity, and more along with the local time/date of the input.",
     "languages":[ "style/media/python.png", "style/media/html.jpg"],
     "libraries": ["style/media"]
   }
 }
 
-const portfolio = document.getElementsByClassName("portfolio-tag")
-console.log(portfolio)
+const portfolio = document.getElementsByClassName("modal-btn")
 for (let i = 0; i < portfolio.length; i ++){
   portfolio[i].addEventListener("click", function(){
-    const data = json[portfolio[i]["id"]];
+    const data = json[portfolio[i]["firstChild"]["id"]];
     console.log(data);
-    console.log(document.getElementsByClassName("feature")[0])
+    document.getElementById("exampleModalLabel").innerHTML = portfolio[i]["firstChild"]["id"];
+    document.getElementById("year").innerHTML = data["year"]
     document.getElementById("description").innerHTML = data["description"];
-    // document.getElementsByClassName("overlay")[0].style.display = "none";
-    // document.getElementById("video").style.display = "none";
-    document.getElementsByClassName("feature")[0].style.display = "inline";
+    for (let i = 0; i < data["languages"].length; i ++){
+      console.log( document.getElementById("l" + (i + 1)));
+      document.getElementById("l" + (i + 1)).src = data["languages"][i]
+    }
   })
 }

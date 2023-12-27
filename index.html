@@ -29,7 +29,7 @@
   <!-- <script src = "app.js"></script> -->
 
   <div class="container-fluid" style="font-family:karma">
-    <video id = "video" autoplay loop muted>
+    <video id="video" autoplay loop muted>
       <source src="style/media/stars.mp4" type="video/mp4" />
     </video>
     <div class="overlay">
@@ -52,24 +52,6 @@
         <div class="image col">
           <img class="image-fluid float" src="style/media/self1.png">
         </div>
-        <!-- <div class="main">
-          <img src="https://www.kirupa.com/icon/1f354.svg" width="50" height="50">
-          <svg id="rotatingText" viewBox="0 0 200 200" width="200" height="200">
-            <defs>
-              <path id="circle" d="M 100, 100
-                      m -75, 0
-                      a 75, 75 0 1, 0 150, 0
-                      a 75, 75 0 1, 0 -150, 0
-                      ">
-              </path>
-            </defs>
-            <text width="400">
-              <textPath alignment-baseline="top" xlink:href="#circle" class="text">
-                Part of a heart-healthy breakfast...sorta! -
-              </textPath>
-            </text>
-          </svg>
-        </div> -->
       </div>
       <div id="link2" class="container-fluid about row">
         <div class="text col">
@@ -101,7 +83,8 @@
           <div class="row thumb-row">
             <div class="col-sm-3 col-xs-6">
               <div class="thumb-box">
-                <img class="portfolio-tag" src="style/media/map.png" id="pokemongocaml" />
+                <button class = "modal-btn" type="button" data-toggle="modal" data-target="#exampleModal"><img class="portfolio-tag"
+                    src="style/media/map.png" id="pokemongocaml" /></button>
                 <div class="caption">
                   <p> PokemonGOCaml (2023)</p>
                 </div>
@@ -109,7 +92,8 @@
             </div>
             <div class="col-sm-3 col-xs-6">
               <div class="thumb-box">
-                <img class="portfolio-tag" src="style/media/bookifly.png" id="bookifly" />
+                <button class = "modal-btn" type="button" data-toggle="modal" data-target="#exampleModal"><img
+                  class="portfolio-tag" src="style/media/bookifly.png" id="bookifly" /></button>
                 <div class="caption">
                   <p> Bookfily (2023)</p>
                 </div>
@@ -173,31 +157,31 @@
           <h1 id="link4" style="font-family:kavoon">skills</h1>
           <br>
         </div>
-        <div class = "languages">
-          <div class = "row">
+        <div class="languages">
+          <div class="row">
             <h2>Languages</h2>
           </div>
-          <div class = "row justify-content-md-center">
+          <div class="row justify-content-md-center">
             <div class="col-sm-4">
-              <img src = "style/media/python.png"/>
-            </div>
-            <div class = "col-sm-4">
-              <img src = "style/media/java.png"/>
-            </div>
-            <div class = "col-sm-4">
-              <img src = "style/media/csharp.png"/>
-            </div>
-            <div class = "col-sm-4">
-              <img src = "style/media/js.png"/>
+              <img src="style/media/python.png" />
             </div>
             <div class="col-sm-4">
-              <img src = "style/media/ocaml-logo.png"/>
+              <img src="style/media/java.png" />
             </div>
-            <div class = "col-sm-4">
-              <img src = "style/media/html.jpg"/>
+            <div class="col-sm-4">
+              <img src="style/media/csharp.png" />
             </div>
-            <div class = "col-sm-4">
-              <img src = "style/media/css.png"/>
+            <div class="col-sm-4">
+              <img src="style/media/js.png" />
+            </div>
+            <div class="col-sm-4">
+              <img src="style/media/ocaml-logo.png" />
+            </div>
+            <div class="col-sm-4">
+              <img src="style/media/html.jpg" />
+            </div>
+            <div class="col-sm-4">
+              <img src="style/media/css.png" />
             </div>
           </div>
         </div>
@@ -216,66 +200,77 @@
                 </svg></a>
             </div>
             <div class="col-sm-3">
-              <a href = "https://github.com/KaylaNg1"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-              </svg></a>
+              <a href="https://github.com/KaylaNg1"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg></a>
             </div>
             <div class="col-sm-3">
-              <a href = "mailto: kln47@cornell.edu"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope"
-                viewBox="0 0 16 16">
-                <path
-                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-              </svg></a>
+              <a href="mailto: kln47@cornell.edu"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                  fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                </svg></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade feature" tabindex = "-1">
-    <div class="modal-container" id="modal_container" style="font-family:karma">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="text col">
-          <h1 id="name" style="font-family:kavoon">PokemonGOCaml</h1>
-          <h3 id="year" style="color: #AEC3B0">2023</h3>
-          <p id="description">PokemonGOCaml is a pokemon inspired game, utilizing the functional programming
-            language OCaml and
-            libraries such as Raylib and Raygui. Users are able to explore maps, catch different types of pokemon,
-            and
-            level up!</p>
-          <button>DEMO</button>
-          <div class="languages">
-            <h3>languages</h3>
-            <div class="container-fluid">
-              <div class="row justify-content-md-center">
-                <div class="col-sm-3">
-                  <img class="image-fluid" src="style/media/ocaml-logo.png" />
+  <!-- Modal -->
+  <div class="modal fade feature" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text col">
+            <!-- <h1 id="p-name" style="font-family:kavoon">PokemonGOCaml</h1> -->
+            <h3 id="year" style="color: #AEC3B0">2023</h3>
+            <p id="description">PokemonGOCaml is a pokemon inspired game, utilizing the functional programming language
+              OCaml and
+              libraries such as Raylib and Raygui. Users are able to explore maps, catch different types of pokemon, and
+              level up!</p>
+            <button>DEMO</button>
+            <div class="languages">
+              <h3>languages</h3>
+              <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                  <div class="col-sm-3">
+                    <img id = "l1" class="image-fluid" src="style/media/ocaml-logo.png" />
+                  </div>
+                  <div class="col-sm-3">
+                    <img id = "l2" class="image-fluid" src="style/media/ocaml-logo.png" />
+                  </div>
+                  <div class="col-sm-3">
+                    <img id = "l3" class="image-fluid" src="style/media/ocaml-logo.png" />
+                  </div>
                 </div>
-                <div class="col-sm-3">
-                  <img class="image-fluid" src="style/media/ocaml-logo.png" />
-                </div>
-                <div class="col-sm-3">
-                  <img class="image-fluid" src="style/media/ocaml-logo.png" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="libraries">
-                  <h3>libraries</h3>
+                <div class="row">
+                  <div class="libraries">
+                    <h3>libraries</h3>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="images container">
-          <div class="row">
-            <div class="col">
-              <img class="image-fluid one" src="style/media/pgstart.png">
-              <img class="image-fluid one" src="style/media/pgmap1.png">
-              <img class="image-fluid one" src="style/media/pgmap12.png">
-              <img class="image-fluid one" src="style/media/pgcom.png">
+          <div class="images container">
+            <div class="row">
+              <div class="col">
+                <img class="image-fluid one" src="style/media/pgstart.png">
+                <img class="image-fluid one" src="style/media/pgmap1.png">
+                <img class="image-fluid one" src="style/media/pgmap12.png">
+                <img class="image-fluid one" src="style/media/pgcom.png">
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
           </div>
         </div>
       </div>
